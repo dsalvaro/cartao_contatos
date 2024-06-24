@@ -34,6 +34,9 @@ var id = location.href.split("=").pop();
         const positionElement = document.getElementById('position');
         positionElement.textContent = cargo;
 
+        const compartilharElement = document.getElementById('compartilhar');
+        compartilharElement.href = "https://api.whatsapp.com/send?text=dsalvaro.github.io/cartao_contatos/?id="+id;
+
         const positionProfilePic = document.getElementById('profile-pic');
         positionProfilePic.src = `./imgs/persons/${id}.png`;
 
@@ -48,3 +51,5 @@ var id = location.href.split("=").pop();
 
         const linkLinkedin = document.getElementById('link-linkedin');
         linkLinkedin.href = linkedin;
+
+
