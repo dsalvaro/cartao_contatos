@@ -28,6 +28,7 @@ var id = location.href.split("=").pop();
         const linkedin = data[id].linkedin;
 
         // Atualizar os elementos HTML com os dados carregados
+
         const nameElement = document.getElementById('nome');
         nameElement.textContent = nome;
 
